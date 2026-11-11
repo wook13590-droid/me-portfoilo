@@ -1,0 +1,476 @@
+
+.projects {
+  background: #ffffff;
+  color: #111;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.projects-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 65px;
+}
+
+.projects-heading .section-label {
+  color: #777;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.projects-heading h2 {
+  font-size: clamp(58px, 8vw, 100px);
+  font-weight: 900;
+  letter-spacing: -6px;
+  line-height: 1;
+  margin-bottom: 22px;
+  color: #111;
+}
+
+.projects-heading h2 span {
+  color: #888;
+}
+
+.projects-heading > p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.project-slider {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-image-area {
+  width: 100%;
+  height: clamp(320px, 48vw, 600px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  background: #eeeeee;
+  animation: projectAppear 0.45s ease;
+}
+
+@keyframes projectAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.project-image-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  background: #eeeeee;
+}
+
+.project-image-fallback span {
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.project-image-fallback strong {
+  font-size: clamp(38px, 7vw, 78px);
+  font-weight: 900;
+  letter-spacing: -4px;
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+}
+
+.project-image-fallback small {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #888;
+}
+
+.project-image-index {
+  position: absolute;
+  z-index: 3;
+  top: 22px;
+  left: 22px;
+  padding: 11px 16px;
+  background: #111;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.project-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+  padding: 45px 0 35px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.project-information {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-category {
+  color: #888;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.project-information h3 {
+  color: #111;
+  font-size: clamp(35px, 5vw, 55px);
+  font-weight: 900;
+  letter-spacing: -3px;
+  margin-top: 13px;
+  overflow-wrap: anywhere;
+}
+
+.project-information h4 {
+  color: #333;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.project-information > p {
+  max-width: 600px;
+  color: #666;
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 18px;
+  word-break: keep-all;
+}
+
+.project-tags {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  padding: 9px 14px;
+  border: 1px solid #d5d5d5;
+  border-radius: 0;
+  background: transparent;
+  color: #555;
+  font-size: 10px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.project-tags span:hover {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.project-demo,
+.project-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  padding: 13px 21px;
+  border: 1px solid #111;
+  border-radius: 0;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.project-demo:hover,
+.project-github:hover {
+  background: #fff;
+  color: #111;
+  transform: translateY(-3px);
+}
+
+.project-navigation {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.project-count {
+  text-align: right;
+  margin-bottom: 14px;
+  color: #111;
+  font-size: 12px;
+}
+
+.project-count strong {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.project-count span {
+  color: #999;
+}
+
+.project-progress {
+  width: 100%;
+  height: 2px;
+  overflow: hidden;
+  background: #dedede;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.project-progress span {
+  display: block;
+  height: 100%;
+  background: #111;
+  border-radius: 0;
+  transition: width 0.35s ease;
+}
+
+.project-arrows {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.project-arrows button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #111;
+  border-radius: 0;
+  background: #fff;
+  color: #111;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.project-arrows button:hover {
+  background: #111;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+  .projects {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .projects-heading {
+    margin-bottom: 40px;
+  }
+
+  .projects-heading h2 {
+    font-size: 58px;
+    letter-spacing: -4px;
+  }
+
+  .projects-heading > p {
+    font-size: 13px;
+  }
+
+  .project-image-area {
+    height: 280px;
+  }
+
+  .project-image-index {
+    top: 14px;
+    left: 14px;
+    padding: 9px 12px;
+    font-size: 9px;
+  }
+
+  .project-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    padding: 35px 0;
+  }
+
+  .project-information h3 {
+    font-size: 36px;
+  }
+
+  .project-information h4 {
+    font-size: 15px;
+  }
+
+  .project-information > p {
+    font-size: 13px;
+  }
+
+  .project-tags {
+    gap: 7px;
+  }
+
+  .project-tags span {
+    padding: 8px 11px;
+    font-size: 10px;
+  }
+
+  .project-links {
+    gap: 8px;
+  }
+
+  .project-demo,
+  .project-github {
+    padding: 12px 15px;
+    font-size: 9px;
+  }
+
+  .project-navigation {
+    width: 100%;
+  }
+
+  .project-count {
+    text-align: left;
+  }
+
+  .project-arrows {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .projects-heading h2 {
+    font-size: 46px;
+  }
+
+  .project-image-area {
+    height: 230px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-demo,
+  .project-github {
+    width: 100%;
+  }
+}
+
+/* ==============================
+   PROJECT TYPOGRAPHY UPGRADE
+============================== */
+
+/* 프로젝트 섹션 글꼴 */
+.projects {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 프로젝트 종류 */
+.project-category {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #555;
+}
+
+/* 프로젝트 제목 */
+.project-information h3 {
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 900;
+  letter-spacing: -3px;
+  line-height: 1.15;
+}
+
+/* 프로젝트 한 줄 소개 */
+.project-information h4 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #222;
+}
+
+/* 프로젝트 설명 */
+.project-information > p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  color: #444;
+}
+
+/* 기술 태그 */
+.project-tags span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  padding: 10px 16px;
+}
+
+/* 프로젝트 링크 버튼 */
+.project-demo,
+.project-github {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  padding: 15px 23px;
+}
+
+/* 프로젝트 번호 */
+.project-count strong {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* 모바일 글씨 크기 */
+@media (max-width: 700px) {
+  .project-information h3 {
+    font-size: 40px;
+  }
+
+  .project-information h4 {
+    font-size: 17px;
+  }
+
+  .project-information > p {
+    font-size: 14px;
+  }
+
+  .project-tags span {
+    font-size: 11px;
+  }
+}

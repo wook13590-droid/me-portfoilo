@@ -1,0 +1,155 @@
+
+.skills {
+  background: #f8f8f8;
+  color: #111;
+}
+
+.skills .section-heading {
+  margin-bottom: 65px;
+}
+
+.skills .section-label {
+  color: #777;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.skills .section-heading h2 {
+  font-size: clamp(48px, 6vw, 75px);
+  line-height: 1.1;
+  letter-spacing: -4px;
+  font-weight: 900;
+  color: #111;
+}
+
+.skills .section-heading h2 span {
+  color: #888;
+}
+
+.skills-intro {
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  margin-top: -30px;
+  margin-bottom: 65px;
+}
+
+.skills-list {
+  border-top: 1px solid #ccc;
+}
+
+.skill-group {
+  display: grid;
+  grid-template-columns: 65px 1fr 1.2fr;
+  align-items: center;
+  gap: 30px;
+  padding: 42px 0;
+  border-bottom: 1px solid #ccc;
+  transition: background 0.3s ease;
+}
+
+.skill-number {
+  color: #888;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.skill-group-info h3 {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #111;
+}
+
+.skill-group-info p {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.9;
+}
+
+.skill-items {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-items span {
+  padding: 12px 17px;
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 0;
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.skill-items span:hover {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.skills-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+  .skill-group {
+    grid-template-columns: 40px 1fr;
+    gap: 18px;
+    padding: 32px 0;
+  }
+
+  .skill-group-info h3 {
+    font-size: 21px;
+  }
+
+  .skill-items {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+
+  .skills-intro {
+    margin-top: -20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills .section-heading h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .skill-group-info h3 {
+    font-size: 19px;
+  }
+
+  .skill-group-info p {
+    font-size: 13px;
+  }
+
+  .skill-items span {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+
+  .skills-bottom {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
