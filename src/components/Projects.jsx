@@ -82,6 +82,19 @@ const projects = [
       { label: 'WATCH VIDEO ↗', url: 'https://drive.google.com/file/d/1fW7AUABHmUUu6JX4awLzL2E32aKI8arS/view' },
     ],
   },
+  {
+    number: '07',
+    title: 'DREAM LOG',
+    subtitle: '꿈을 기록하고, 해몽하며 소중히 간직하는 공간',
+    description: '꿈을 기록하고 해몽 결과를 모아 소중한 꿈의 순간들을 간직할 수 있는 웹사이트입니다.',
+    image: `${import.meta.env.BASE_URL}images/dream-log.JPG`,
+    tags: ['Dream Journal', 'Dream Interpretation', 'Web App'],
+    type: 'PERSONAL PROJECT',
+    links: [
+      { label: 'VIEW PROJECT ↗', url: 'https://wook13590-droid.github.io/dream-log/' },
+      { label: 'VIEW GITHUB ↗', url: 'https://github.com/wook13590-droid/dream-log' },
+    ],
+  },
 ]
 
 function Projects() {
